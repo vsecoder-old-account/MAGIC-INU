@@ -1,0 +1,8 @@
+@font-face {    
+    font-family: "magic";    
+    src: url(../font/14432.ttf) format("truetype");
+}
+
+h1 {
+    font-family: "magic", Verdana, Tahoma;
+}
