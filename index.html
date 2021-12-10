@@ -139,22 +139,10 @@ main div img {
 
 #card {
     margin: 0 auto;
-    max-width: 250px;
+    max-width: 290px;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.5);
     z-index: 9;
-    padding: 40px;
-    background-image: repeating-linear-gradient(to right,
-  #c4e17f 0px, #c4e17f 50px,
-  #f7fdca 50px, #f7fdca 100px,
-  #fad071 100px, #fad071 150px,
-  #f0766b 150px, #f0766b 200px,
-  #db9dbe 200px, #db9dbe 250px,
-  #c49cdf 250px, #c49cdf 300px,
-  #6599e2 300px, #6599e2 350px,
-  #61c2e4 350px, #61c2e4 400px);
-  background-size: 100% 10px;
-  background-repeat:no-repeat;
     -webkit-transition: -webkit-transform 500ms ease-in-out;
     transition: -webkit-transform 500ms ease-in-out;
     transition: transform 500ms ease-in-out;
@@ -176,6 +164,11 @@ main div img {
   width: auto;
 }
 
+#card img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 600px) {
     .tilt {
         height: 80px;
@@ -194,6 +187,7 @@ main div img {
     .menu {
         width: 100%;
         height: auto;
+        max-height: auto;
         margin: 0;
     }
     .text {
@@ -218,8 +212,6 @@ main div img {
 }
 
 .width {
-    padding-left: 20px;
-    padding-right: 20px;
 }
 
 .container {
@@ -372,7 +364,8 @@ main div img {
 .inline {
   z-index: 1000;
   position: relative;
-  font-family: "magic", Verdana, Tahoma;;
+  font-family: "magic", Verdana, Tahoma;
+  width: 50%;
 }
 
 iframe {
@@ -387,6 +380,42 @@ iframe {
   vertical-align: top;
   margin-top: 10%;
 }
+
+.gray {
+  color: #707070;
+}
+
+.num {
+  font-size: 30px;
+  width: fit-content;
+  float: left;
+}
+
+.txt {
+  text-align: left;
+}
+
+.txt p, .txt h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.txt p {
+  width: fit-content;
+}
+
+.p1 {
+  margin-left: 20px;
+  margin-top: 34px;
+}
+
+.gray {
+  margin-left: 50px;
+}
+
+.inline1 {
+  display: inline-block;
+}
 </style>
 
 </head>
@@ -395,11 +424,11 @@ iframe {
       <div class="inline">
         <img src="static/img/logo1.png" width="50px">
       </div>
-      <div class="inline">GAMES</div>
-      <div class="inline">MERCH</div>
-      <div class="inline">...</div>
+      <div class="inline1">GAMES</div>
+      <div class="inline1">MERCH</div>
+      <div class="inline1">...</div>
 
-      <img src="static/img/border.png" alt="magic" class="header-border">
+      <!--<img src="static/img/border.png" alt="magic" class="header-border">-->
   </header>
 
   <main>
@@ -454,7 +483,7 @@ iframe {
 
     <div class="block center black">
         <div class="text">
-            <img src="static/img/dog1.png" class="wow fadeInRight animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0s">
+            <img src="static/img/sticker_magic.png" class="wow fadeInRight animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0s">
             <p>Upon launch within the first two weeks, Wolverinu has accomplished being listed on CoinMarketCap, CoinGecko, Shibaswap, Fegex. Wolverinu reached 21,000,000 Market Cap within 9 days, acquired 4500 holders, hosted 5 AMA’s, and held various contests. It is safe to say that Wolverinu has plenty of potential and room to grow in the near future.</p>
         </div>
         <div class="text">
@@ -466,11 +495,13 @@ iframe {
 
     <div class="block center" style="margin-top: -150px;">
         <div class="text">
+            <img src="static/img/sticker_like.png" class="wow fadeInRight animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0s">
             <h1>How to Buy</h1>
             <p>It only takes a few minutes to get yourself set up</p>
         </div>
         <div class="width">
           <div class="inline">
+            <!--
             <div class="step">
                 <img src="static/img/logo2.png" style="width: 40%;margin-bottom: -10px;" class="wow fadeInRight animate__jackInTheBox" data-wow-duration="2s" data-wow-delay="0s">
                 <h3>Step 1</h3>
@@ -491,6 +522,38 @@ iframe {
                 <h3>Step 4</h3>
                 <p>123</p>
             </div>
+            -->
+            <div class="step1">
+              <div class="txt">
+                <h2 class="num">1</h2>
+                <p class="p1">Create MetaMask Wallet</p>
+                <p class="gray"></p>
+              </div>
+
+              <div class="txt">
+                <h2 class="num">2</h2>
+                <p class="p1">Fund your Wallet with ETH.</p>
+                <p class="gray">(You can buy via Metamask - or transfer ETH from your chosen wallet/exchange.)</p>
+              </div>
+
+              <div class="txt">
+                <h2 class="num">3</h2>
+                <p class="p1">Connect your Wallet to Uniswap.</p>
+                <p class="gray"></p>
+              </div>
+
+              <div class="txt">
+                <h2 class="num">4</h2>
+                <p class="p1">Copy and Paste Wolverinu Contract.</p>
+                <p class="gray">Paste Contract Address: 0xca7b3ba66556c4da2e2a9afef9c64f909a59430a</p>
+              </div>
+
+              <div class="txt">
+                <h2 class="num">5</h2>
+                <p class="p1">Connect your Wallet to Uniswap.</p>
+                <p class="gray">Click Swap for a successful transaction!</p>
+              </div>
+            </div>
           </div>
           <iframe src="https://app.uniswap.org/#/swap"></iframe>
         </div>
@@ -500,8 +563,7 @@ iframe {
 
     <div class="block center black" style="-webkit-perspective: 1000px;perspective: 1000px;">
         <div id="card" class="wow fadeInRight animate__wobble" data-wow-duration="2s" data-wow-delay="0s">
-            <img src="static/img/logo.png">
-            <h1>COMING SOON</h1>
+            <img src="static/img/coming soon.png">
         </div>
         <div class="step card">
             <h1>Magic Inu - Magicpaper</h1>
