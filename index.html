@@ -211,7 +211,63 @@ main div img {
     }
 }
 
-.width {
+iframe {
+  border: 0;
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+  max-width: 800px;
+  min-width: 360px;
+  min-height: 600px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 10%;
+}
+
+@media (min-width: 1500px) {
+  body {
+    font-size: 20px;
+  }
+  .tilt {
+    height: 100px;
+    margin-top: 50px;
+  }
+  .up {
+    margin-top: 45px;
+  }
+  .top {
+    margin-bottom: -140px;
+  }
+  iframe {
+    width: 500px;
+    height: 800px;
+    margin-top: 5%;
+  }
+  .wow {
+    width: 30%;
+  }
+  #card {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1800px) {
+  body {
+    font-size: 30px;
+  }
+  .tilt {
+    height: 120px;
+    margin-top: 50px;
+  }
+  .up {
+    margin-top: 30px;
+  }
+  .top {
+    margin-bottom: -140px;
+  }
+  .wow {
+    width: 30%;
+  }
 }
 
 .container {
@@ -368,19 +424,6 @@ main div img {
   width: 50%;
 }
 
-iframe {
-  border: 0;
-  margin: 0 auto;
-  display: block;
-  border-radius: 20px;
-  max-width: 800px;
-  min-width: 360px;
-  min-height: 600px;
-  display: inline-block;
-  vertical-align: top;
-  margin-top: 10%;
-}
-
 .gray {
   color: #707070;
 }
@@ -421,12 +464,14 @@ iframe {
 </head>
 <body>
   <header>
-      <div class="inline">
+      <div class="inline1">
         <img src="static/img/logo1.png" width="50px">
       </div>
-      <div class="inline1">GAMES</div>
-      <div class="inline1">MERCH</div>
-      <div class="inline1">...</div>
+      <a href="#whywe"><div class="inline1">Why we</div></a>
+      <a href="#text1"><div class="inline1">1</div></a>
+      <a href="#text2"><div class="inline1">2</div></a>
+      <a href="#text3"><div class="inline1">3</div></a>
+      <a href="#text4"><div class="inline1">4</div></a>
 
       <!--<img src="static/img/border.png" alt="magic" class="header-border">-->
   </header>
@@ -438,7 +483,7 @@ iframe {
 
     <div class="tilt black up"></div>
 
-    <div class="block center black" style="margin-top: -150px;">
+    <div class="block center black" style="margin-top: -150px;" id="whywe">
         <div class="text">
             <h1>Why we?</h1>
             <p>Upon launch within the first two weeks, Wolverinu has accomplished being listed on CoinMarketCap, CoinGecko, Shibaswap, Fegex. Wolverinu reached 21,000,000 Market Cap within 9 days, acquired 4500 holders, hosted 5 AMA’s, and held various contests. It is safe to say that Wolverinu has plenty of potential and room to grow in the near future.</p>
@@ -451,7 +496,7 @@ iframe {
 
     <div class="tilt black"></div>
     
-    <div class="block center" style="margin-top: -150px;">
+    <div class="block center" style="margin-top: -150px;" id="text1">
         <div class="container">
             <div class="ball"><img src="static/img/1.png" alt="orb"></div>
             <div class="ball"><img src="static/img/2.png" alt="orb"></div>
@@ -462,11 +507,10 @@ iframe {
             <div class="ball"><img src="static/img/1.png" alt="orb"></div>
         </div>  
         <div class="text">
-            <img src="static/img/text.png" class="wow fadeInRight animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0s">
-            <p>Upon launch within the first two weeks, Wolverinu has accomplished being listed on CoinMarketCap, CoinGecko, Shibaswap, Fegex. Wolverinu reached 21,000,000 Market Cap within 9 days, acquired 4500 holders, hosted 5 AMA’s, and held various contests. It is safe to say that Wolverinu has plenty of potential and room to grow in the near future.</p>
-        </div>
-        <div class="text">
-            <p>Launched on October 23rd 2021, Wolverinu’s mission is to bring order to the Ethereum blockchain and prove what a powerful community can achieve when united. Thanks to the continuous and thorough communication within the community, our holders’ questions are always answered thanks to the developers, admins and moderators of Wolverinu.            </p>
+            <img src="static/img/sticker_like.png" class="wow fadeInRight animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0s" style="float: left;">
+            <p>
+              Upon launch within the first two weeks, Wolverinu has accomplished being listed on CoinMarketCap, CoinGecko, Shibaswap, Fegex. Wolverinu reached 21,000,000 Market Cap within 9 days, acquired 4500 holders, hosted 5 AMA’s, and held various contests. It is safe to say that Wolverinu has plenty of potential and room to grow in the near future.
+            </p>
         </div>
         <div class="container1">
             <div class="ball"><img src="static/img/1.png" alt="orb"></div>
@@ -481,21 +525,18 @@ iframe {
 
     <div class="tilt black top"></div>
 
-    <div class="block center black">
+    <div class="block center black" id="text2">
         <div class="text">
-            <img src="static/img/sticker_magic.png" class="wow fadeInRight animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0s">
+            <img src="static/img/sticker_magic.png" class="wow fadeInRight animate__fadeInRight" data-wow-duration="2s" data-wow-delay="0s" style="float: right;">
             <p>Upon launch within the first two weeks, Wolverinu has accomplished being listed on CoinMarketCap, CoinGecko, Shibaswap, Fegex. Wolverinu reached 21,000,000 Market Cap within 9 days, acquired 4500 holders, hosted 5 AMA’s, and held various contests. It is safe to say that Wolverinu has plenty of potential and room to grow in the near future.</p>
-        </div>
-        <div class="text">
-            <p>Launched on October 23rd 2021, Wolverinu’s mission is to bring order to the Ethereum blockchain and prove what a powerful community can achieve when united. Thanks to the continuous and thorough communication within the community, our holders’ questions are always answered thanks to the developers, admins and moderators of Wolverinu. </p>
         </div>
     </div>
 
     <div class="tilt black"></div>
 
-    <div class="block center" style="margin-top: -150px;">
+    <div class="block center" style="margin-top: -150px;" id="text3">
         <div class="text">
-            <img src="static/img/sticker_like.png" class="wow fadeInRight animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0s">
+            <img src="static/img/sticker_magic1.png" class="wow fadeInRight animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="0s">
             <h1>How to Buy</h1>
             <p>It only takes a few minutes to get yourself set up</p>
         </div>
@@ -561,11 +602,11 @@ iframe {
 
     <div class="tilt black top"></div>
 
-    <div class="block center black" style="-webkit-perspective: 1000px;perspective: 1000px;">
+    <div class="block center black" style="-webkit-perspective: 1000px;perspective: 1000px;" id="text4">
         <div id="card" class="wow fadeInRight animate__wobble" data-wow-duration="2s" data-wow-delay="0s">
             <img src="static/img/coming soon.png">
         </div>
-        <div class="step card">
+        <div class="step card" style="">
             <h1>Magic Inu - Magicpaper</h1>
             <p>The Paper goes into full detail about any and everything to do with Magic Inu and fully explains the direction the project is going, alongside the utilities and how it will disrupt the crypto space.
                 There are big things coming for us and we can't wait to show you the ins and outs of this amazing project!</p>
